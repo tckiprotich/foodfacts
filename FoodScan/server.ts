@@ -1,20 +1,26 @@
-// Import the 'express' module
+import dotenv from 'dotenv';
 import express from 'express';
+import routes from "./Routes/index"
 
-// Create an Express application
+// Load the environment variables from the .env file
+dotenv.config();
+
+// Create an instance of express
 const app = express();
+const port = process.env.PORT;
 
-// Set the port number for the server
-const port = 3000;
+//view directory
+app.use(express.static(__dirname + '/Views'));
 
-// Define a route for the root path ('/')
-app.get('/', (req, res) => {
-  // Send a response to the client
-  res.send('Hello friend, TypeScript + Node.js + Express!');
-});
+// Parse the request body
+app.use(express.json());
+app.use(express.urlencoded({ extended: true }));
+
+
+// Define the routes
+app.use('/', routes);
 
 // Start the server and listen on the specified port
-app.listen(port, () => {
-  // Log a message when the server is successfully running
-  console.log(`Server is running on http://localhost:${port}`);
+app.listen(3000, '0.0.0.0', () => {
+    console.log(`Server is running on http://localhost:${port}`);
 });

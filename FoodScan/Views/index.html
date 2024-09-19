@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FoodScan - Scan Food Product Barcodes</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f9;
+            color: #333;
+        }
+        header {
+            background-color: #4CAF50;
+            color: white;
+            padding: 1rem 0;
+            text-align: center;
+        }
+        .container {
+            max-width: 800px;
+            margin: 2rem auto;
+            padding: 1rem;
+            background-color: white;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+        }
+        h1 {
+            font-size: 2rem;
+            margin-bottom: 1rem;
+        }
+        p {
+            font-size: 1.1rem;
+            line-height: 1.6;
+        }
+        .features {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1rem;
+            margin-top: 2rem;
+        }
+        .feature {
+            flex: 1 1 calc(50% - 1rem);
+            background-color: #e8f5e9;
+            padding: 1rem;
+            border-radius: 8px;
+            text-align: center;
+        }
+        .feature h2 {
+            font-size: 1.5rem;
+            margin-bottom: 0.5rem;
+        }
+        .feature p {
+            font-size: 1rem;
+        }
+        footer {
+            text-align: center;
+            padding: 1rem 0;
+            background-color: #4CAF50;
+            color: white;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>FoodScan</h1>
+        <p>Scan Food Product Barcodes to Get Their Nutritional Value</p>
+    </header>
+
+    <div class="container">
+        <h1>About FoodScan</h1>
+        <p>Welcome to FoodScan, your go-to solution for quickly and easily obtaining nutritional information about food products. Simply scan the barcode of any food product, and our system will provide you with detailed nutritional values, including calories, fats, proteins, carbohydrates, and more.</p>
+        <div class="features">
+            <a href="/scan" class="scan-button">Scan Now</a>
+            <div class="feature">
+                <h2>Easy to Use</h2>
+                <p>Just scan the barcode of any food product using your device's camera, and get instant nutritional information.</p>
+            </div>
+            <div class="feature">
+                <h2>Comprehensive Data</h2>
+                <p>Access a wide range of nutritional data, including calories, fats, proteins, carbohydrates, and more.</p>
+            </div>
+            <div class="feature">
+                <h2>Contribute to the Community</h2>
+                <p>If information is missing, you can help improve our database by submitting the nutritional details of the products you scan.</p>
+            </div>
+            <div class="feature">
+                <h2>Free and Open Source</h2>
+                <p>FoodScan is free to use and open source, allowing anyone to contribute and improve the project.</p>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <p>&copy; 2023 FoodScan. All rights reserved.</p>
+    </footer>
+</body>
+</html>
