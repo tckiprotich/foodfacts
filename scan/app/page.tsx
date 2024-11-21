@@ -97,7 +97,7 @@ export default function Home() {
       <footer className="bg-gray-800 text-white py-8">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <p>&copy; 2023 Food Product Scanner. All rights reserved.</p>
-          <p className="mt-2">Powered by Open Food Facts database.</p>
+          
         </div>
       </footer>
     </main>
